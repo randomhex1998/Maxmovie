@@ -43,4 +43,10 @@ a {
 .container {
   height: 100%;
   padding: 0 20rem;
+
+  @include XLarge{padding: 0 15rem;}
+  @include Large{padding: 0 6rem;}
+  @include Medium{padding: 0 3rem;}
+  @include XSmall{padding: 0 1rem;}
+  @include Small{padding: 0 0.5rem;}
 }
