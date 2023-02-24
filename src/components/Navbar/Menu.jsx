@@ -30,6 +30,7 @@ const Menu = () => {
           </a>
         </li>
       </ul>
+      <div className="shadow-menu"></div>
     </div>
   );
 };

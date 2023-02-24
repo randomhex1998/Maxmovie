@@ -14,8 +14,14 @@
     font-family: sans-serif;
   }
 
-  .logo {
-    cursor: pointer;
+  .logo-area {
+    @include Large {
+      display: flex;
+    }
+
+    .logo {
+      cursor: pointer;
+    }
   }
 
   .left-side-area {
@@ -51,15 +57,58 @@
 
     .nav-items {
       margin-left: 2rem;
+
+      .nav-links {
+        color: $soft-gray;
+        font-family: $vazir-font;
+
+        &:hover {
+          color: #fff;
+        }
+      }
     }
 
-    .nav-links {
-      color: $soft-gray;
-      font-family: $vazir-font;
+    @include Large {
+      width: 40%;
+      position: fixed;
+      top: 0;
+      right: 0;
+      z-index: 9999;
+      height: 100vh;
+      flex-direction: column;
+      gap: 1.5rem;
+      text-align: right;
+      justify-content: flex-start !important;
+      background-color: #222;
+      padding-top: 2rem;
+      transform: translateX(0000px);
 
-      &:hover {
-        color: #fff;
+      .nav-items {
+        margin-left: 0;
+        margin-right: 1rem;
       }
+    }
+  }
+
+  .shadow-menu {
+    @include Large {
+      position: fixed;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      top: 0;
+      background-color: rgba(0, 0, 0, 0.377);
+      transform: translateX(0000px);
+    }
+  }
+
+  #bars {
+    font-size: 25px;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+    @include Large {
+      display: flex;
     }
   }
 }
