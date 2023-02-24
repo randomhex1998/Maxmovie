@@ -19,7 +19,7 @@ a {
 }
 
 .btn {
-  padding: 0.6rem 1rem;
+  padding: 0.5rem 1rem;
   border: 1px solid black;
   border-radius: 7px;
   background-color: $soft-yellow;
@@ -27,6 +27,13 @@ a {
   font-size: 14px;
   font-weight: 400;
   color: $hard-dark;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.4rem;
+  i{
+    font-size: 16px;
+  }
 
   &:hover {
     background-color: #f39c12;
