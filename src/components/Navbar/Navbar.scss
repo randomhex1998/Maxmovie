@@ -1,0 +1,24 @@
+.navbar {
+  height: 3.5rem;
+  background-color: $hard-dark;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: sans-serif;
+  }
+
+  .logo {
+    cursor: pointer;
+  }
+
+  .left-side-area {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+}

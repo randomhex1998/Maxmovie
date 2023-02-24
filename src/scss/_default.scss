@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.3s linear;
+}
+
+body {
+  background-color: $hard-gray;
+  font-family: $vazir-font !important;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  padding: 0.6rem 1rem;
+  border: 1px solid black;
+  border-radius: 7px;
+  background-color: $soft-yellow;
+  font-family: $vazir-font;
+  font-size: 14px;
+  font-weight: 400;
+  color: $hard-dark;
+
+  &:hover {
+    background-color: #f39c12;
+  }
+}
+
+.container {
+  height: 100%;
+  padding: 0 20rem;
+}
