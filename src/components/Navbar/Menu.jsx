@@ -1,9 +1,11 @@
 import React from "react";
+import { max } from "./Navbar";
 
-const Menu = () => {
+const Menu = ({kaka}) => {
+  const jack = React.useContext(max);
   return (
     <div className="menu">
-      <ul className="menu-area">
+      <ul className={jack ? "menu-area active-menu" : "menu-area"}>
         <li className="nav-items">
           <a href="#" className="nav-links">
             خانه
@@ -30,7 +32,8 @@ const Menu = () => {
           </a>
         </li>
       </ul>
-      <div className="shadow-menu"></div>
+      <div
+        className={jack ? "shadow-menu active-menu" : "shadow-menu"} onClick={kaka}></div>
     </div>
   );
 };

@@ -1,7 +1,7 @@
 import LogoImage from "../../img/logo.png";
 import Bars from "./Bars";
 
-const Logo = () => {
+const Logo = ({ barsClick }) => {
   return (
     <div className="logo-area">
       <img
@@ -11,7 +11,7 @@ const Logo = () => {
         width="90px"
         height="30px"
       />
-      <Bars />
+      <Bars barsCLK={barsClick} />
     </div>
   );
 };

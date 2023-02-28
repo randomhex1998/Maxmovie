@@ -1,9 +1,9 @@
 import React from "react";
 
-const Bars = () => {
+const Bars = ({barsCLK}) => {
   return (
     <>
-      <i className="fa-solid fa-bars" id="bars"></i>
+      <i onClick={barsCLK} className="fa-solid fa-bars" id="bars"></i>
     </>
   );
 };
