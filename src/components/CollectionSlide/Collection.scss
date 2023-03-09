@@ -1,0 +1,34 @@
+.coll-box {
+  width: 60%;
+//   height: 150px;
+  //   background-color: crimson;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: column;
+  gap: 0.7rem;
+  margin-top: 2rem;
+  cursor: pointer;
+
+  &:hover .coll-text{
+    color: $soft-yellow;
+  }
+
+  .coll-img-area {
+    width: 280px;
+    // height: 140px;
+    background-color: gold;
+    overflow: hidden;
+    border-radius: 0.3rem;
+
+    .coll-img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .coll-text{
+    color: $soft-gray;
+    font-weight: 300;
+  }
+}

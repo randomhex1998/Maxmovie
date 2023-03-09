@@ -3,7 +3,7 @@ import SliderSwiper from "./SliderSwiper";
 
 const Collection = () => {
   return (
-    <div>
+    <div className="container">
       <SliderSwiper />
     </div>
   );
