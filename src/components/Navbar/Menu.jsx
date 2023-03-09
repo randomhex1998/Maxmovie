@@ -1,5 +1,7 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { max } from "./Navbar";
+
 
 const Menu = ({kaka}) => {
   const jack = React.useContext(max);
@@ -7,29 +9,29 @@ const Menu = ({kaka}) => {
     <div className="menu">
       <ul className={jack ? "menu-area active-menu" : "menu-area"}>
         <li className="nav-items">
-          <a href="#" className="nav-links">
+          <Link to="/" className="nav-links">
             خانه
-          </a>
+          </Link>
         </li>
         <li className="nav-items">
-          <a href="#" className="nav-links">
+          <Link to="/movie" className="nav-links">
             فیلم
-          </a>
+          </Link>
         </li>
         <li className="nav-items">
-          <a href="#" className="nav-links">
+          <Link to="/series" className="nav-links">
             سریال
-          </a>
+          </Link>
         </li>
         <li className="nav-items">
-          <a href="#" className="nav-links">
+          <Link to="/animation" className="nav-links">
             انیمیشن
-          </a>
+          </Link>
         </li>
         <li className="nav-items">
-          <a href="#" className="nav-links">
+          <Link to="/contact" className="nav-links">
             تماس با ما
-          </a>
+          </Link>
         </li>
       </ul>
       <div

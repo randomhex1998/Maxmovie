@@ -1,6 +1,6 @@
-const Button = ({ btnText, btnId = "#", btnIco = "#" }) => {
+const Button = ({ btnText, btnId = "#", btnIco = "#", btnLink="#" }) => {
   return (
-    <a href="#" className="btn" id={btnId}>
+    <a href={btnLink} className="btn" id={btnId}>
       <i className={btnIco}></i>
       {btnText}
     </a>
