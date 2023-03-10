@@ -4,3 +4,30 @@
 @import "./default";
 @import "../components/Navbar/Navbar.scss";
 @import "../components/CollectionSlide/Collection.scss";
+
+.main-section {
+  display: flex;
+  justify-content: space-between;
+  // align-items: center;
+  //   flex-wrap: wrap;
+  margin-top: 3rem;
+  gap: 0.5rem;
+
+  .side-bar {
+    flex: 0 0 35%;
+    background-color: skyblue;
+
+    @include Large {
+      flex: 0 0 100%;
+    }
+  }
+
+  .content-bar {
+    flex: 0 0 65%;
+    background-color: darkorange;
+
+    @include Large {
+      flex: 0 0 100%;
+    }
+  }
+}

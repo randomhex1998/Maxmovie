@@ -1,11 +1,17 @@
 import React from "react";
 import Collection from "../components/CollectionSlide/Collection";
+import ContentBar from "../components/ContentBar/ContentBar";
+import SideBar from "../components/SideBar/SideBar";
 
 const Home = () => {
   return (
-    <div>
+    <React.Fragment>
       <Collection />
-    </div>
+      <section className="main-section container">
+        <SideBar />
+        <ContentBar />
+      </section>
+    </React.Fragment>
   );
 };
 

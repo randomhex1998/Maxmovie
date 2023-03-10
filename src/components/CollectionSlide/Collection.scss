@@ -21,10 +21,17 @@
     background-color: gold;
     overflow: hidden;
     border-radius: 0.3rem;
+    object-fit: cover;
+
+    @include XLarge {
+      width: 100%;
+      height:220px;
+    }
 
     .coll-img {
       width: 100%;
       height: auto;
+      object-fit: cover;
     }
   }
 
