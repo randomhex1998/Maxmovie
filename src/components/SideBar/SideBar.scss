@@ -1,0 +1,40 @@
+.sidebar-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+
+  .social-box {
+    width: 45%;
+    height: 90px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    i {
+      font-size: 60px;
+      color: #fff;
+    }
+
+    .social-txt {
+      font-size: 14px;
+      font-weight: 300;
+      color: #fff;
+    }
+
+    &:nth-child(1) {
+      background: linear-gradient(120deg, #41d7ef, #1d7ed7);
+    }
+    &:nth-child(2) {
+      background: linear-gradient(
+        45deg,
+        #f09433 0%,
+        #e6683c 25%,
+        #dc2743 50%,
+        #cc2366 75%,
+        #bc1888 100%
+      );
+    }
+  }
+}
