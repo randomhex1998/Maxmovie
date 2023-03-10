@@ -7,7 +7,7 @@ import SliderBox from "./SliderBox";
 import "swiper/css";
 
 // import required modules
-import { Pagination , Autoplay } from "swiper";
+import { Autoplay } from "swiper";
 
 //Import Local Images
 import Harry from "../../img/movies/HarryPotter.jpg";
