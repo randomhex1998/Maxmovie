@@ -1,10 +1,7 @@
 .coll-box {
-  width: 60%;
-//   height: 150px;
-  //   background-color: crimson;
   display: flex;
   justify-content: center;
-  align-items: flex-end;
+  align-items: center;
   flex-direction: column;
   gap: 0.7rem;
   margin-top: 2rem;
@@ -16,7 +13,7 @@
 
   .coll-img-area {
     width: 280px;
-    // height: 140px;
+    height: 155px;
     background-color: gold;
     overflow: hidden;
     border-radius: 0.3rem;
